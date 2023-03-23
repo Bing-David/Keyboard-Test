@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>key-sp</title>
+
+  <!--Char.js-etc-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!--Char.js-etc-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+  <!--Preload-->
+  <link rel="preload" href="./css/index.css" as="style">
+  <!--Preload-->
+
+  <!--Main_css-->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index_R.css">
+  <!--Main_css-->
+
+
+  <!--Loadding-->
+  <style>
+      .loading {
+      background-color: #1A1A1A;
+      color: #F15A24;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 9999;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    
+
+    
+    .loading-text {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  </style>
+  <!--Loadding-->
+
+</head>
+<body style="scroll-behavior: smooth;">
+
+  <div class="loading">
+    <h1 class="loading-text">| Cargando |</h1>
+  </div>
+  
+
+<section class="main" style="background-image: url(/svg/key-background.svg);">
+  <div class="main-container">
+    
+    <h4 class="autor">
+      <b>BY CODE</b>
+    </h4>
+
+      <h4 class="title-main" alt="Keyboard test">
+        Keyboard speed test
+      </h4>
+  </div>
+
+    <div class="play-btn">
+      <h1>
+       <a href="#g-play">PLAY</a> 
+      </h1>
+    </div>
+</section>
+
+
+
+
+<section class="game">
+
+
+ 
+  
+  <div class="container" id="g-play">
+
+    <div class="message"></div>
+
+
+    <div class="board"></div>
+
+    <div class="input">
+      <input type="text" id="user-input" placeholder="Escribe las palabras aquí...">
+    </div>
+
+
+    <!--Settings-words-lengh-->
+    <div class="options">
+      <label for="num-words-input">Palabras</label>
+      <select id="num-words-input" classs="select">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+      </select>
+
+    <!--Settings-words-lengh-->
+
+
+
+      <!--kEY-BOARD-->
+      <div class="keyboard">
+        <div class="keyboard-row">
+          <div class="key" data-key="81">Q</div>
+          <div class="key" data-key="87">W</div>
+          <div class="key" data-key="69">E</div>
+          <div class="key" data-key="82">R</div>
+          <div class="key" data-key="84">T</div>
+          <div class="key" data-key="89">Y</div>
+          <div class="key" data-key="85">U</div>
+          <div class="key" data-key="73">I</div>
+          <div class="key" data-key="79">O</div>
+          <div class="key" data-key="80">P</div>
+        </div>
+        <div class="keyboard-row">
+          <div class="key" data-key="65">A</div>
+          <div class="key" data-key="83">S</div>
+          <div class="key" data-key="68">D</div>
+          <div class="key" data-key="70">F</div>
+          <div class="key" data-key="71">G</div>
+          <div class="key" data-key="72">H</div>
+          <div class="key" data-key="74">J</div>
+          <div class="key" data-key="75">K</div>
+          <div class="key" data-key="76">L</div>
+        </div>  
+        <div class="keyboard-row">
+          <div class="key" data-key="90">Z</div>
+          <div class="key" data-key="88">X</div>
+          <div class="key" data-key="67">C</div> 
+          <div class="key" id="key-pace" data-key="32">  </div> 
+          <div class="key" data-key="86">V</div>
+          <div class="key" data-key="66">B</div>
+          <div class="key" data-key="78">N</div>
+          <div class="key" data-key="77">M</div>
+        </div>
+      </div>
+      <!--kEY-BOARD-->
+
+
+
+
+
+      <!--statistics-->
+      <div id="stats"></div>
+      <!--statistics-->
+    
+    
+    </div>
+      
+
+
+
+
+
+
+    <!--graphics-->
+    <div class="containe-ppm-time">
+      <div><canvas   id="ppm-chart"></canvas></div>
+      <div><canvas   id="time-chart"></canvas></div>
+    </div>
+    <!--graphics-->
+     
+ </section>
+
+
+
+ <!--Escript.game-->
+ <script src="./script/index.js"></script>
+ <!--Escript.game-->
+
+
+
+
+<footer style="background-image: url(/svg/footer.svg);">
+<div class="conteiner-footer">
+
+
+  <a href="https://github.com/Bing-David">  <img src="/svg/git-logo.svg" alt="Git-hub-svg"></a>
+  <a href="https://www.instagram.com/ultimo_david/?hl=es-la">  <img src="/svg/Instagram.svg" alt="Instagram-Back-svg"></a>
+  <!-- <a href="https://jeilercontacto.000webhostapp.com/">  <img src="/svg/web.svg" alt="Cloud-black-svg"></a> -->
+  
+  <h4>
+    BY CODE ©2023
+  </h4>
+ 
+</div>
+
+
+</footer>
+
+</body>
+</html> 
+
+
